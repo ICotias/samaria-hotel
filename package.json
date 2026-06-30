@@ -1,0 +1,13 @@
+{
+  "name": "samaria-hotel",
+  "version": "1.0.0",
+  "description": "Landing page do Hotel Samaria — Irecê/BA",
+  "private": true,
+  "scripts": {
+    "dev": "serve . -l 8080",
+    "start": "serve . -l 8080"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
