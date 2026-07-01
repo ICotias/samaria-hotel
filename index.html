@@ -502,6 +502,20 @@
         object-fit: cover;
         display: block;
       }
+      /* Vídeos verticais dos quartos: mostra o vídeo inteiro, centralizado */
+      .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0a0a0a;
+      }
+      .slide video {
+        height: 560px;
+        max-width: 100%;
+        width: auto;
+        object-fit: contain;
+        display: block;
+      }
       .slide-cap {
         position: absolute;
         bottom: 0;
@@ -1172,6 +1186,7 @@
         .nav-inner { padding: 0 20px; }
         .am-grid { grid-template-columns: 1fr; }
         .slide img { height: 360px; }
+        .slide video { height: 68vh; max-height: 460px; }
         .slide-cap { padding: 40px 24px 24px; }
         .slide-cap h4 { font-size: 20px; }
         .manifesto { padding: 80px 0; }
@@ -1387,63 +1402,41 @@
         <div class="carousel reveal">
           <div class="track-mask">
             <div class="track" id="track">
-              <!-- Slide: Suíte Premium -->
+              <!-- Slide: Suíte Master (vídeo) -->
               <div class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1800&q=80"
-                  alt="Suíte Premium"
-                />
+                <video
+                  src="assets/suite-master.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
                 <div class="slide-cap">
-                  <p class="rtag">Categoria Premium</p>
-                  <h4>Suíte Premium</h4>
+                  <p class="rtag">Categoria Master</p>
+                  <h4>Suíte Master</h4>
                   <p>
-                    O ápice do conforto: amplo espaço, cama king e acabamentos
-                    refinados em madeira e luz natural.
+                    O ápice do conforto: amplo espaço, acabamentos refinados e
+                    todo o requinte da nossa categoria principal.
                   </p>
                 </div>
               </div>
-              <!-- Slide: Superior -->
+              <!-- Slide: Suíte Standard (vídeo) -->
               <div class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=1800&q=80"
-                  alt="Quarto Superior"
-                />
+                <video
+                  src="assets/suite-standard.mp4"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  preload="metadata"
+                ></video>
                 <div class="slide-cap">
-                  <p class="rtag">Categoria Superior</p>
-                  <h4>Quarto Superior</h4>
+                  <p class="rtag">Categoria Standard</p>
+                  <h4>Suíte Standard</h4>
                   <p>
-                    Elegância e funcionalidade para estadias de negócios ou
-                    lazer, com vista privilegiada.
-                  </p>
-                </div>
-              </div>
-              <!-- Slide: Casal -->
-              <div class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=1800&q=80"
-                  alt="Quarto Casal"
-                />
-                <div class="slide-cap">
-                  <p class="rtag">Categoria Casal</p>
-                  <h4>Quarto Casal Conforto</h4>
-                  <p>
-                    Aconchego e privacidade em um ambiente sereno, ideal para
-                    relaxar a dois.
-                  </p>
-                </div>
-              </div>
-              <!-- Slide: Família -->
-              <div class="slide">
-                <img
-                  src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1800&q=80"
-                  alt="Quarto Família"
-                />
-                <div class="slide-cap">
-                  <p class="rtag">Categoria Família</p>
-                  <h4>Quarto Família</h4>
-                  <p>
-                    Espaço generoso e versátil para toda a família, com todo o
-                    conforto que vocês merecem.
+                    Conforto e elegância na medida certa, com tudo que você
+                    precisa para uma estadia impecável.
                   </p>
                 </div>
               </div>
